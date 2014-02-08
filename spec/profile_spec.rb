@@ -12,6 +12,6 @@ describe 'profile' do
   specify 'should require a name' do
     @profile = Profile.new
     @profile.should_not be_valid
-    @profile.errors[:name].should include("Name must not be blank")
+    @profile.errors[:name].should include("can't be blank")
   end
 end
